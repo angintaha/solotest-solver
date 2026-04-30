@@ -86,6 +86,6 @@ The project is configured for cross-platform compatibility using **Docker** and 
     * Computer Engineering
     * Mathematics Engineering (Double Major Program)
 
-* **Email:** taha.angin@gmail.com [taha.angin@gmail.com](mailto:taha.angin@gmail.com)
+* **Email:** [taha.angin@gmail.com](mailto:taha.angin@gmail.com)
 
 * **LinkedIn** [Ahmet Taha Angın](https://www.linkedin.com/in/angintaha/)
