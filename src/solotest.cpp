@@ -179,20 +179,20 @@ int Board::solve(int target) {
                         }
                     }
                 }
-                if(current->all_nodes[curr_index]->left != NULL) {
-                    if(current->all_nodes[curr_index]->left->left != NULL) {
+                if(current->all_nodes[curr_index]->down != NULL) {
+                    if(current->all_nodes[curr_index]->down->down != NULL) {
                         Board *new_board = new Board(*current);
-                        if(new_board->try_move(new_board->all_nodes[curr_index], new_board->all_nodes[curr_index]->left, new_board->all_nodes[curr_index]->left->left)) {
+                        if(new_board->try_move(new_board->all_nodes[curr_index], new_board->all_nodes[curr_index]->down, new_board->all_nodes[curr_index]->down->down)) {
                             s.push(new_board);
                         } else {
                             delete new_board;
                         }
                     }
                 }
-                if(current->all_nodes[curr_index]->down != NULL) {
-                    if(current->all_nodes[curr_index]->down->down != NULL) {
+				if(current->all_nodes[curr_index]->left != NULL) {
+                    if(current->all_nodes[curr_index]->left->left != NULL) {
                         Board *new_board = new Board(*current);
-                        if(new_board->try_move(new_board->all_nodes[curr_index], new_board->all_nodes[curr_index]->down, new_board->all_nodes[curr_index]->down->down)) {
+                        if(new_board->try_move(new_board->all_nodes[curr_index], new_board->all_nodes[curr_index]->left, new_board->all_nodes[curr_index]->left->left)) {
                             s.push(new_board);
                         } else {
                             delete new_board;
